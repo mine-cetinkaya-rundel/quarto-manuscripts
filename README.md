@@ -10,35 +10,35 @@ Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posi
   - Check: Create a git repository
 - In `index.qmd` in the new project:
   - Update `title`: 
-    ```
-    La Palma Earthquakes
-    ```
+  ```
+  La Palma Earthquakes
+  ```
   - Update `authors`:
-    ```
-    - name: Steve Purves
-      orcid: 0000-0002-0760-5497
-      corresponding: true
-      email: steve@curvenote.com
-      roles:
-        - Investigation
-        - Project administration
-        - Software
-        - Visualization
-      affiliations:
-        - Curvenote
-    - name: Rowan Cockett
-      orcid: 0000-0002-7859-8394
-      corresponding: false
-      roles: []
-      affiliations:
-        - Curvenote
-    ```
+  ```
+  - name: Steve Purves
+    orcid: 0000-0002-0760-5497
+    corresponding: true
+    email: steve@curvenote.com
+    roles:
+      - Investigation
+      - Project administration
+      - Software
+      - Visualization
+    affiliations:
+      - Curvenote
+  - name: Rowan Cockett
+    orcid: 0000-0002-7859-8394
+    corresponding: false
+    roles: []
+    affiliations:
+      - Curvenote
+  ```
   - Update `keywords`:
-    ```
-    keywords:
-    - La Palma
-    - Earthquakes
-    ```
+  ```
+  keywords:
+  - La Palma
+  - Earthquakes
+  ```
 - Render, pop out to new browser window
 
 ## Video 2: Multiple formats
