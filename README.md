@@ -103,7 +103,11 @@ Copy over text from manuscript template:
 ## Video 5: Embed computing
 
 - Embed results from a `.qmd`
+- Show how to navigate to code from HTML output
 - Embed results from an `.ipynb`.
+- Show how to navigate to code from PDF output [TO DO: Test this out]
 
-## Video 6:
+## Video 6: Dev container?
+
+[TO DO: Figure out what goes here]
 
