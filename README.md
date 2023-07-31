@@ -45,17 +45,35 @@ Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posi
 
 - Show the MS Word output by downloading, then navigate in the Finder to the `_manuscript` folder
 - Show the MECA bundle output in the Finder in `_manuscript` folder
-- Go to `_quarto.yml` and under `formats` add
+- In `_quarto.yml` under `formats` 
+```
+pdf: true
+```
+- Install `agu` extension in the Terminal:
+```
+quarto add quarto-journals/agu
+```
+- In `_quarto.yml` and under `formats`, make `pdf` into
 ```
 agu-pdf: default
 ```
-- Re-render and show that PDF is there and styled for the journal
-- Change journal to PLOS by updating `_quarto.yml`
+- Re-render and show that PDF is styled for AGU journal
+- In `_quarto.yml` and under `formats`, try changing `agu-pdf` to `plos-pdf`, show that you get an error (TO DO: Should I skip the error bit?)
+- Install `plos` extension in the Terminal:
 ```
-pdf: default
+quarto add quarto-journals/plos
+```
+- In `_quarto.yml` and under `formats`, change journal to PLOS
+```
+plos-pdf: true
+```
+- Re-render and show that PDF is now styled for PLOS journal
+- Add `keep-tex` to `plos-pdf`:
+```
 plos-pdf:
-  keep-tex: true    
+  keep-tex: true 
 ```
+- Re-render and show that in the Finder, in project folder root, there is now a `index.tex` file. Open it, and highlight the `\documentclass[10pt, letterpaper]{article}` lines
 
 ## Video 3: Front matter
 
