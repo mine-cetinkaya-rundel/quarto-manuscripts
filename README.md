@@ -6,7 +6,7 @@ Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posi
 
 - RStudio > File > New Project > New Directory > Quarto Manuscript
 - In the Quarto Manuscript dialogue:
-  - Directory name: la-palma-earthquakes
+  - Directory name: `la-palma-earthquakes`
   - Check: Create a git repository
 - In `index.qmd` in the new project:
   - Update `title`: 
