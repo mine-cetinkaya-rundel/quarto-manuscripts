@@ -40,11 +40,13 @@ Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posi
   - Earthquakes
   ```
 - Render, pop out to new browser window
+- Run `use_git()` and then `usethis::use_github()`
+- In the Terminal, publish to GitHub Pages
+- Once published, show how Hypothesis works
 
 ## Video 2: Multiple formats
 
 - Show the MS Word output by downloading, then navigate in the Finder to the `_manuscript` folder
-- Show the MECA bundle output in the Finder in `_manuscript` folder
 - In `_quarto.yml` under `formats` 
 ```
 pdf: true
@@ -58,14 +60,13 @@ quarto add quarto-journals/agu
 agu-pdf: default
 ```
 - Re-render and show that PDF is styled for AGU journal
-- In `_quarto.yml` and under `formats`, try changing `agu-pdf` to `plos-pdf`, show that you get an error (TO DO: Should I skip the error bit?)
 - Install `plos` extension in the Terminal:
 ```
 quarto add quarto-journals/plos
 ```
 - In `_quarto.yml` and under `formats`, change journal to PLOS
 ```
-plos-pdf: true
+plos-pdf: default
 ```
 - Re-render and show that PDF is now styled for PLOS journal
 - Add `keep-tex` to `plos-pdf`:
@@ -75,8 +76,17 @@ plos-pdf:
 ```
 - Re-render and show that in the Finder, in project folder root, there is now a `index.tex` file. Open it, and highlight the `\documentclass[10pt, letterpaper]{article}` lines
 
-## Video 3: Front matter
+## Video 3: MECA bundle
 
+- Terminal: `quarto render` (or Build Tab > Render Project)
+- Show the MECA bundle output in the Finder in `_manuscript` folder
+
+## Video 4: Front matter
+
+- Add `agu-pdf` back to `_quarto.yml`
+```
+agu-pdf: default
+```
 - Add more to `index.qmd` YAML
 ```
 abstract: |
@@ -89,12 +99,13 @@ key-points:
 date: last-modified
 number-sections: true
 ```
-- Re-render and show that some of these show up on the HTML and some on the PDF output (only the ones that journal requires)
+- Re-render and show that some of these show up on the HTML and some on the AGU PDF and some on the PLOS PDF output
 
 ## Video 4: Add content
 
 Copy over text from manuscript template:
 
+- Add inline code chunk
 - Add code chunk in qmd generating figure, and cross reference it using the visual editor
 - Add code chunk in qmd generating table, and cross reference it using the visual editor
 - Show how to navigate to code from HTML output
@@ -102,12 +113,13 @@ Copy over text from manuscript template:
 
 ## Video 5: Embed computing
 
-- Embed results from a `.qmd`
+- Add a `.qmd` and a `.ipynb` with computation
+- Commit and push everything
+- Embed results from the`.qmd`
 - Show how to navigate to code from HTML output
-- Embed results from an `.ipynb`.
-- Show how to navigate to code from PDF output [TO DO: Test this out]
+- Embed results from the `.ipynb`.
+- Show how to navigate to code from PDF output
 
 ## Video 6: Dev container?
 
-[TO DO: Figure out what goes here]
 
