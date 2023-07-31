@@ -77,8 +77,7 @@ plos-pdf:
 
 ## Video 3: Front matter
 
-Add more to `index.qmd` YAML
-
+- Add more to `index.qmd` YAML
 ```
 abstract: |
   In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). ...
@@ -90,6 +89,21 @@ key-points:
 date: last-modified
 number-sections: true
 ```
-
 - Re-render and show that some of these show up on the HTML and some on the PDF output (only the ones that journal requires)
+
+## Video 4: Add content
+
+Copy over text from manuscript template:
+
+- Add code chunk in qmd generating figure, and cross reference it using the visual editor
+- Add code chunk in qmd generating table, and cross reference it using the visual editor
+- Show how to navigate to code from HTML output
+- Add citations using the visual editor
+
+## Video 5: Embed computing
+
+- Embed results from a `.qmd`
+- Embed results from an `.ipynb`.
+
+## Video 6:
 
