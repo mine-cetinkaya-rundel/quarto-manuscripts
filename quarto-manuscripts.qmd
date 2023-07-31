@@ -1,0 +1,96 @@
+---
+title: "Reproducible Manuscripts with Quarto"
+author: "Mine Çetinkaya-Rundel"
+format: revealjs
+editor: visual
+---
+
+# Reproducible authoring
+
+## Literate programming
+
+On the good, better, best scale:
+
+-   good: well organized scripts separate from plain text files that contain the prose and pull in outputs of those scripts
+
+-   better: literate programming, with code, its output, and prose intertwined in a single file
+
+-   best: going a step further and allowing your readers to dive into the code
+
+## Back in 2019...
+
+![](images/elife-paper.png){fig-align="center" width="800"}
+
+## Since then...
+
+Not many other such papers **\[TO DO: Confirm this statement\]**
+
+# A new project type: Manuscript
+
+## Academic writing with Quarto
+
+-   Quarto **journal articles** (Quarto 1.2+) allow you to author journal articles with literate programming and native LaTeX templates provided by journals to create reproducible articles. **\[TO DO: Confirm version\]**
+
+-   Quarto **manuscripts** (Quarto 1.4+), in addition to doing everything you can do with journal articles,
+
+    -   give readers easy access to **multiple formats** through a manuscript website
+
+    -   provide a framework for **publishing computations** alongside the manuscript, allowing readers to dive into your code
+
+## Some more intro stuff
+
+**\[TO DO: Flesh this out\]**
+
+# Let's write a manuscript
+
+## Getting started with Quarto manuscripts
+
+**\[TO DO: Add Video 1 here\]**
+
+::: notes
+Let's create our first Quarto manuscript...
+:::
+
+## Multiple formats from one source
+
+**\[TO DO: Add Video 2 here\]**
+
+::: notes
+As I previously mentioned, Quarto manuscripts give easy access to multiple formats through a manuscript website\...
+:::
+
+## Rich front matter
+
+**\[TO DO: Add Video 3 here\]**
+
+::: notes
+Quarto supports rich front matter...
+:::
+
+## Add content
+
+**\[TO DO: Add Video 4 here\]**
+
+::: notes
+You can add prose and code to your qmd file for a reproducible document...
+:::
+
+## Embed content
+
+**\[TO DO: Add Video 5 here\]**
+
+::: notes
+Some results you want to embed, you might not want to include all of the code in your single `index.qmd` file. So you can embed from a separate `.qmd`...
+
+Or from a separate `.ipynb`...
+:::
+
+## More videos
+
+\[TO DO: Figure out what goes here\]
+
+# Wrap up
+
+## Wrap up
+
+\[TO DO: Add wrap up content\]
