@@ -279,8 +279,6 @@ La Palma is one of the west most islands in the Volcanic Archipelago of the Cana
 @tbl-yearly-earthquakes shows the yearly number of earthquakes on La Palma.
 ```
 
-- Show how to navigate to code from HTML output
-
 - Embed results from the `.ipynb`.
 
 ```
@@ -289,7 +287,7 @@ La Palma is one of the west most islands in the Volcanic Archipelago of the Cana
 @fig-spatial-plot shows the locations of recent earthquakes on La Palma.
 ```
 
-- Show how to navigate to code from PDF output
+- Show how to navigate to each notebook from HTML output
 
 ## Video 7: Dev container
 
