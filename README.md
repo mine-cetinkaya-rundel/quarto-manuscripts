@@ -4,6 +4,8 @@ Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posi
 
 ## Video 1: Getting started with Quarto manuscripts
 
+4:45
+
 <https://rstudio.wistia.com/medias/lxzxu9wuyq>
 
 ```
@@ -52,6 +54,8 @@ Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posi
 
 ## Video 2: Multiple formats
 
+2:55
+
 https://rstudio.wistia.com/medias/rjpyfnto0o
 
 ```
@@ -90,6 +94,8 @@ plos-pdf:
 
 ## Video 3: MECA bundle
 
+0:11
+
 <https://rstudio.wistia.com/medias/cnzvad8r1d>
 
 ```
@@ -100,6 +106,8 @@ plos-pdf:
 - Show the MECA bundle output in the Finder in `_manuscript` folder
 
 ## Video 4: Front matter
+
+0:57
 
 <https://rstudio.wistia.com/medias/9y8nd3i2jc>
 
@@ -123,7 +131,15 @@ number-sections: true
 - Go back and update `_quarto.yml` from `plos-pdf` to `agu-pdf`
 - Re-render and show that some of these show up on the HTML on the AGU PDF output
 
-## Video 4: Add content
+## Video 5: Add content
+
+9:38
+
+<>
+
+```
+
+```
 
 Start with the following code chunks in the document:
 
@@ -206,6 +222,8 @@ Eight eruptions have been recorded since the late 1400s (@fig-timeline).
 Data and methods are discussed in @sec-data-methods.
 ```
 
+- Show the source code and git diff to make a point about plain text being written under the hood.
+
 - Add equation
 
 ```
@@ -249,7 +267,7 @@ La Palma is one of the west most islands in the Volcanic Archipelago of the Cana
 ![Map of La Palma](images/la-palma-map.png){#fig-map}
 ```
 
-## Video 5: Embed computing
+## Video 6: Embed computing
 
 - Add a `.qmd` and a `.ipynb` with computation
 - Commit and push everything
@@ -273,6 +291,6 @@ La Palma is one of the west most islands in the Volcanic Archipelago of the Cana
 
 - Show how to navigate to code from PDF output
 
-## Video 6: Dev container?
+## Video 7: Dev container?
 
 
