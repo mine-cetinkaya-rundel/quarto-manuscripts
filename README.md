@@ -4,7 +4,7 @@ Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posi
 
 ## Video 1: Getting started with Quarto manuscripts
 
-4:45
+2:43
 
 <https://rstudio.wistia.com/medias/lxzxu9wuyq>
 
@@ -54,7 +54,7 @@ Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posi
 
 ## Video 2: Multiple formats
 
-2:55
+2:47
 
 https://rstudio.wistia.com/medias/rjpyfnto0o
 
@@ -133,7 +133,7 @@ number-sections: true
 
 ## Video 5: Add content
 
-9:38
+9:02
 
 <https://rstudio.wistia.com/medias/qpxdmpkwdn>
 
@@ -268,6 +268,8 @@ La Palma is one of the west most islands in the Volcanic Archipelago of the Cana
 ```
 
 ## Video 6: Embed computing
+
+4:09
 
 - Add a `.qmd` and a `.ipynb` with computation
 - Commit and push everything
