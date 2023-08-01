@@ -101,10 +101,12 @@ plos-pdf:
 
 ## Video 4: Front matter
 
-- Add `agu-pdf` back to `_quarto.yml`
+<https://rstudio.wistia.com/medias/9y8nd3i2jc>
+
 ```
-agu-pdf: default
+<script src="https://fast.wistia.com/embed/medias/9y8nd3i2jc.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_9y8nd3i2jc seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/9y8nd3i2jc/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
 ```
+
 - Add more to `index.qmd` YAML
 ```
 abstract: |
@@ -117,7 +119,9 @@ key-points:
 date: last-modified
 number-sections: true
 ```
-- Re-render and show that some of these show up on the HTML and some on the AGU PDF and some on the PLOS PDF output
+- Re-render and show that some of these show up on the HTML on the PLOS PDF output
+- Go back and update `_quarto.yml` from `plos-pdf` to `agu-pdf`
+- Re-render and show that some of these show up on the HTML on the AGU PDF output
 
 ## Video 4: Add content
 
