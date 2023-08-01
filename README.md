@@ -4,6 +4,8 @@ Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posi
 
 ## Video 1: Getting started with Quarto manuscripts
 
+<https://rstudio.wistia.com/medias/lxzxu9wuyq>
+
 - RStudio > File > New Project > New Directory > Quarto Manuscript
 - In the Quarto Manuscript dialogue:
   - Directory name: `la-palma-earthquakes`
