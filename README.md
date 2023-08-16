@@ -17,6 +17,14 @@ Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posi
 
 ## Video 1: Getting started with Quarto manuscripts
 
+2:43
+
+<https://rstudio.wistia.com/medias/lxzxu9wuyq>
+
+```
+<script src="https://fast.wistia.com/embed/medias/lxzxu9wuyq.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_lxzxu9wuyq seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/lxzxu9wuyq/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+```
+
 - RStudio > File > New Project > New Directory > Quarto Manuscript
 - In the Quarto Manuscript dialogue:
   - Directory name: `la-palma-earthquakes`
@@ -59,6 +67,14 @@ Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posi
 
 ## Video 2: Multiple formats
 
+2:47
+
+https://rstudio.wistia.com/medias/rjpyfnto0o
+
+```
+<script src="https://fast.wistia.com/embed/medias/rjpyfnto0o.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_rjpyfnto0o seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/rjpyfnto0o/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+```
+
 - Show the MS Word output by downloading, then navigate in the Finder to the `_manuscript` folder
 - In `_quarto.yml` under `formats` 
 ```
@@ -91,15 +107,27 @@ plos-pdf:
 
 ## Video 3: MECA bundle
 
+0:11
+
+<https://rstudio.wistia.com/medias/cnzvad8r1d>
+
+```
+<script src="https://fast.wistia.com/embed/medias/cnzvad8r1d.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_cnzvad8r1d seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/cnzvad8r1d/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+```
+
 - Terminal: `quarto render` (or Build Tab > Render Project)
 - Show the MECA bundle output in the Finder in `_manuscript` folder
 
 ## Video 4: Front matter
 
-- Add `agu-pdf` back to `_quarto.yml`
+0:57
+
+<https://rstudio.wistia.com/medias/9y8nd3i2jc>
+
 ```
-agu-pdf: default
+<script src="https://fast.wistia.com/embed/medias/9y8nd3i2jc.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_9y8nd3i2jc seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/9y8nd3i2jc/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
 ```
+
 - Add more to `index.qmd` YAML
 ```
 abstract: |
@@ -112,9 +140,19 @@ key-points:
 date: last-modified
 number-sections: true
 ```
-- Re-render and show that some of these show up on the HTML and some on the AGU PDF and some on the PLOS PDF output
+- Re-render and show that some of these show up on the HTML on the PLOS PDF output
+- Go back and update `_quarto.yml` from `plos-pdf` to `agu-pdf`
+- Re-render and show that some of these show up on the HTML on the AGU PDF output
 
-## Video 4: Add content
+## Video 5: Add content
+
+9:02
+
+<https://rstudio.wistia.com/medias/qpxdmpkwdn>
+
+```
+<script src="https://fast.wistia.com/embed/medias/qpxdmpkwdn.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.31% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_qpxdmpkwdn seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/qpxdmpkwdn/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+```
 
 Start with the following code chunks in the document:
 
@@ -197,6 +235,8 @@ Eight eruptions have been recorded since the late 1400s (@fig-timeline).
 Data and methods are discussed in @sec-data-methods.
 ```
 
+- Show the source code and git diff to make a point about plain text being written under the hood.
+
 - Add equation
 
 ```
@@ -240,7 +280,15 @@ La Palma is one of the west most islands in the Volcanic Archipelago of the Cana
 ![Map of La Palma](images/la-palma-map.png){#fig-map}
 ```
 
-## Video 5: Embed computing
+## Video 6: Embed computing
+
+3:18
+
+<https://rstudio.wistia.com/medias/hdesp8b7fc>
+
+```
+<script src="https://fast.wistia.com/embed/medias/hdesp8b7fc.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.31% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_hdesp8b7fc seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/hdesp8b7fc/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+```
 
 - Add a `.qmd` and a `.ipynb` with computation
 - Commit and push everything
@@ -252,18 +300,18 @@ La Palma is one of the west most islands in the Volcanic Archipelago of the Cana
 @tbl-yearly-earthquakes shows the yearly number of earthquakes on La Palma.
 ```
 
-- Show how to navigate to code from HTML output
-
 - Embed results from the `.ipynb`.
 
 ```
-{{< embed notebooks/data-screening.ipynb#fig-spatial-plot >}}
+{{< embed/notebooks/data-screening.ipynb#fig-spatial-plot >}}
 
-@fig-spatial-plot shows the location of recent earthquakes on La Palma.
+@fig-spatial-plot shows the locations of recent earthquakes on La Palma.
 ```
 
-- Show how to navigate to code from PDF output
+- Show how to navigate to each notebook from HTML output
 
-## Video 6: Dev container?
+## Video 7: Dev container
+
+To be recorded..
 
 
