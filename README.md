@@ -2,6 +2,19 @@
 
 Slides and materials for the "Reproducible Manuscripts with Quarto" talk at posit::conf(2023).
 
+## Outline
+
+- Paint a scene: You're writing a paper, you want it to be reproducible, the analysis doesn't take resource-intensive computation and all the code can go into a single Quarto document --> use Quarto journal article. But what if it takes a bit more, what if you code in R but your collaborator created a great plot in Python you want to include, and your grad student did a bunch of data cleaning that you want to bundle with your paper (not just in supplementary materials) but you don't want to re-run that code every time you edit a sentence? --> use Quarto manuscripts.
+- (Maybe) take a step back and introduce Quarto in one slide.
+- Getting started with Quarto manuscripts
+- Multiple formats
+- MECA bundle
+- Front matter
+- Adding content (tables, figures, equations, citations)
+- Embedding computing from qmd and from ipynb
+- Dev containers
+- Wrap-up
+
 ## Video 1: Getting started with Quarto manuscripts
 
 - RStudio > File > New Project > New Directory > Quarto Manuscript
