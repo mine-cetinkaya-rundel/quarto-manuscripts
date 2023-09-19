@@ -97,7 +97,7 @@ e.g., a not-too-computational journal article.
 
 ::: {.column width="5%"}
 ::: {style="text-align: center; font-size: 30px;"}
-<br><br> {{< fa arrow-right >}}{{\< fa question \>}}
+<br><br> {{< fa arrow-right >}}
 :::
 :::
 
@@ -123,7 +123,7 @@ e.g., a not-too-computational journal article.
 
 ::: {.column width="5%"}
 ::: {style="text-align: center; font-size: 30px;"}
-<br><br> {{< fa arrow-right >}}{{\< fa question \>}}
+<br><br> {{< fa arrow-right >}}
 :::
 :::
 
@@ -196,7 +196,7 @@ Stall, Shelley, Erdmann, Christopher, Hanson, Brooks, Lyon, Laura, Ricci, Mia, G
 -   **apply** journal styles to your outputs with Quarto extensions
 -   **publish** to GitHub Pages, Netlify, and more
 -   [**orchestrate** multiple inputs and outputs with Quarto projects]{.fragment .fade-in-then-semi-out}
--   [**orchestrate** multiple inputs and outputs ]{.fragment}[**with embedded computing using a new Quarto project `type: manuscript`**]{style="color: #e0218a"}
+-   [**orchestrate** multiple inputs and outputs **with embedded computing using a new Quarto project `type: manuscript`**]{.fragment style="color: #e0218a"}
 :::
 
 # A new project<br>`type: manuscript`
@@ -320,9 +320,9 @@ from source $\rightarrow$ only relevant / required metadata in manuscript:
 
 ## *Actually* dive into the code
 
--   We've seen demonstrated you can *see* the code underlying the figures and tables in the manuscript
+-   We've seen that you can *peruse* the code underlying the figures and tables in the manuscript
 
--   How about actually *touching* the code in a computational environment that's just a click away, that has all the software and packages needed to reproduce the manuscript, and that is interactive?
+-   What if you wanted to *interact* with the code -- in a computational environment that's just a click away and that has all the software and packages needed to reproduce the manuscript?
 
 ## Back in 2019...
 
