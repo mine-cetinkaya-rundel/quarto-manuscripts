@@ -1,7 +1,7 @@
 ---
 title: "Reproducible Manuscripts<br>with Quarto"
 author: "Mine Çetinkaya-Rundel"
-institute: "Duke University + Posit<br>🔗 [mine.quarto.pub/manuscripts-conf23](https://mine.quarto.pub/manuscripts-conf23)"
+institute: "Duke University + Posit<br>{{< fa link >}} [mine.quarto.pub/manuscripts-conf23](https://mine.quarto.pub/manuscripts-conf23)"
 title-slide-attributes:
   data-background-image: "images/towfiqu-barbhuiya-KKHs1e2yiwc-unsplash.jpg"
   data-background-size: cover
@@ -340,8 +340,10 @@ with `quarto use binder`:
 
 ## Rewind,<br>and get started again {.center}
 
-🔗 <https://quarto.org/docs/manuscripts>
+{{< fa link >}} <https://quarto.org/docs/manuscripts>
 
 ## Thank you! {.center}
 
-🔗 [mine.quarto.pub/manuscripts-conf23](https://mine.quarto.pub/manuscripts-conf23)
+{{< fa link >}} [mine.quarto.pub/manuscripts-conf23](https://mine.quarto.pub/manuscripts-conf23)
+
+{{< fa brands github >}} [github.com/mine-cetinkaya-rundel/quarto-manuscripts](https://github.com/mine-cetinkaya-rundel/quarto-manuscripts)
