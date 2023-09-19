@@ -1,96 +1,347 @@
 ---
-title: "Reproducible Manuscripts with Quarto"
+title: "Reproducible Manuscripts<br>with Quarto"
 author: "Mine Çetinkaya-Rundel"
-format: revealjs
+institute: "Duke University + Posit<br>🔗 [mine.quarto.pub/manuscripts-conf23](https://mine.quarto.pub/manuscripts-conf23)"
+title-slide-attributes:
+  data-background-image: "images/towfiqu-barbhuiya-KKHs1e2yiwc-unsplash.jpg"
+  data-background-size: cover
+  data-background-opacity: "0.25"
+format: 
+  revealjs:
+    theme: [slides.scss]
+    mainfont: "Atkinson Hylerlegible"
+    fontcolor: "#22304E"
+    linkcolor: "#80a9d7"
 editor: visual
 ---
 
-# Reproducible authoring
+# Full complexity spectrum of reproducible scientific projects
 
-## Literate programming
+## Simplest
 
-On the good, better, best scale:
+Can run all code in a single file, and don't mind running it over and over again with each edit.
 
--   good: well organized scripts separate from plain text files that contain the prose and pull in outputs of those scripts
+::: columns
+::: {.column width="47.5%"}
+::: {style="text-align: center;"}
+![](images/quarto-file.png){fig-align="center"} [{{< fa brands r-project >}}]{style="font-size: 100px;color: #3564B1"}
+:::
+:::
 
--   better: literate programming, with code, its output, and prose intertwined in a single file
+::: {.column width="5%"}
+::: {style="text-align: center; font-size: 30px;"}
+<br><br> {{< fa arrow-right >}}
+:::
+:::
 
--   best: going a step further and allowing your readers to dive into the code
+::: {.column width="47.5%"}
+::: {style="text-align: center; font-size: 190px;"}
+[{{< fa brands html5 >}}]{style="color: #d35836"}
+:::
+:::
+:::
+
+e.g. Data Science 101 - HW 1, Stat 101 - Final project, a blog post, a tutorial, a not-too-extensive consulting report, etc.
+
+## Simple
+
+Can run all code in a single file, and don't mind running it over and over again with each edit, **and** need an output that conforms to journal style.
+
+::: columns
+::: {.column width="35%"}
+::: {style="text-align: center;"}
+![](images/quarto-file.png){fig-align="center"} [{{< fa brands r-project >}}]{style="font-size: 100px;color: #3564B1"}
+
+`+` [**Quarto Journal Articles Extension**](https://quarto.org/docs/extensions/listing-journals.html)
+:::
+:::
+
+::: {.column width="5%"}
+::: {style="text-align: center; font-size: 30px;"}
+<br><br> {{< fa arrow-right >}}
+:::
+:::
+
+::: {.column width="55%"}
+::: {style="text-align: center; font-size: 190px;"}
+{{< fa file-pdf >}} [or]{style="font-size: 50px"} {{< fa file-word >}}
+:::
+
+::: {style="text-align: center;"}
+[formatted with journal style]{style="font-size: 40px"}
+:::
+:::
+:::
+
+e.g., a not-too-computational journal article.
+
+## [but science is rarely simple...]{style="font-size: 80px; font-family: Brusher;"} {.center}
+
+::: incremental
+-   multiple collaborators, each with their favorite computing language and code editor
+-   multiple stages of a project, each with their own level of feasibility of what can be re-run with each edit and what needs to be cached
+:::
+
+## More complex
+
+::: columns
+::: {.column width="30%"}
+::: {style="text-align: center;"}
+![](images/quarto-file.png){fig-align="center"}
+
+[{{< fa file-code >}} {{< fa file-code >}} {{< fa file-code >}} {{< fa file-code >}}]{style="font-size: 70px"}
+
+[{{< fa brands r-project >}}]{style="font-size: 100px;color: #3564B1"}
+:::
+:::
+
+::: {.column width="5%"}
+::: {style="text-align: center; font-size: 30px;"}
+<br><br> {{< fa arrow-right >}}{{\< fa question \>}}
+:::
+:::
+
+::: {.column width="55%"}
+::: {style="text-align: center; font-size: 190px;"}
+{{< fa file-pdf >}} [or]{style="font-size: 50px"} {{< fa file-word >}}
+:::
+:::
+:::
+
+## Even more complex
+
+::: columns
+::: {.column width="40%"}
+::: {style="text-align: center;"}
+![](images/quarto-file.png){fig-align="center"}![](images/quarto-file.png){fig-align="center"}
+
+[{{< fa file-code >}} {{< fa file-code >}} {{< fa file-code >}} {{< fa file-code >}} {{< fa file-code >}} {{< fa file-code >}} {{< fa file-code >}}]{style="font-size: 70px"}
+
+[{{< fa brands r-project >}}]{style="font-size: 100px;color: #306998"} [{{< fa brands python >}}]{style="font-size: 100px;color: #4B8BBE"}
+:::
+:::
+
+::: {.column width="5%"}
+::: {style="text-align: center; font-size: 30px;"}
+<br><br> {{< fa arrow-right >}}{{\< fa question \>}}
+:::
+:::
+
+::: {.column width="55%"}
+::: {style="text-align: center; font-size: 190px;"}
+{{< fa file-pdf >}} [or]{style="font-size: 50px"} {{< fa file-word >}}
+:::
+:::
+:::
+
+# Leveraging Quarto for fully reproducible scientific manuscripts
+
+## Aside: What is in a notebook?
+
+A notebook is a document that contains both **code** and **narrative**:
+
+-   Jupyter notebooks (`.ipynb`)
+-   Quarto documents (`.qmd`) -- a potential mindshift
+
+## Current state of affairs
+
+Most computational science is **born in notebooks**
+
+::: incremental
+-   Peer-review and publication workflows **don't support notebooks** as research outputs
+-   The more complex scenarios involve a lot of **manual finagling** to bring the project to journal submission stage
+-   Often during this process **reproducibility is lost**, or takes second seat to the formatting requirements
+-   Final submission **rarely captures all computations**, which are, at best, relegated to supplementary materials
+:::
+
+and ~~dies~~ **ends in PDF or Word documents**
+
+##  {.centered}
+
+![](images/notebooks-now.png){width="100%"}
+
+::: {style="text-align: center; font-size: 40px;"}
+<https://data.agu.org/notebooks-now>
+:::
+
+-   Funded through a grant from the Alfred P. Sloan Foundation to the American Geophysical Union (AGU)
+-   Broad collaboration between open source communities, open science organizations, and software tool makers
+
+::: aside
+Stall, Shelley, Erdmann, Christopher, Hanson, Brooks, Lyon, Laura, Ricci, Mia, Giampoala, Matthew, & Sedora, Brian. (2022). Notebooks Now! Elevating notebooks into scholarly publishing. Zenodo. <https://doi.org/10.5281/zenodo.6981363>.
+:::
+
+## Roadmap to fully reproducible scientific manuscripts
+
+*that are not just PDFs that are the outputs of a single qmd file*
+
+::: fragment
+[{{< fa puzzle-piece >}}]{style="font-size: 50px; color: #4B8BBE"} An end-to-end scholarly publishing workflow that treats Jupyter and Quarto notebooks as a primary element of the scientific record.
+:::
+
+::: fragment
+[{{< fa puzzle-piece >}}]{style="font-size: 50px; color: #306998"} A publication process that elevates transparent and reproducible work by authors, where data and software, together with narrative, are documented, shared, and archived.
+:::
+
+::: fragment
+[{{< fa puzzle-piece >}}]{style="font-size: 50px"} New forms of credit to the wider research community, including research software engineers or rsearch software engineers.
+:::
+
+## Quarto can...
+
+::: incremental
+-   **be authored** in your favorite code editor
+-   **render** from qmd or Jupyter notebook to PDF, Word, HTML, etc.
+-   **execute** code in R, Python, and more
+-   **apply** journal styles to your outputs with Quarto extensions
+-   **publish** to GitHub Pages, Netlify, and more
+-   [**orchestrate** multiple inputs and outputs with Quarto projects]{.fragment .fade-in-then-semi-out}
+-   [**orchestrate** multiple inputs and outputs ]{.fragment}[**with embedded computing using a new Quarto project `type: manuscript`**]{style="color: #e0218a"}
+:::
+
+# A new project<br>`type: manuscript`
+
+## Quarto manuscript
+
+Quarto **manuscripts** (Quarto 1.4+), in addition to doing everything you can do with journal articles, can
+
+-   produce manuscripts in **multiple formats** (including LaTeX or MS Word formats required by journals), and give readers easy access to all of the formats through a website
+
+-   **publish computations** from one or more notebooks alongside the manuscript, allowing readers to dive into your code and view it or interact with it in a virtual environment
+
+# Let's write a manuscript
+
+## Getting started
+
+-   Approach 1: Start from scratch
+    -   Creating a Quarto manuscript
+        -   RStudio: New Project \> New Directory \> Quarto Manuscript
+        -   `quarto create project manuscript <name>`
+    -   Add manuscript content
+-   Approach 2: Start with a sample from <https://quarto.org/docs/manuscripts>
+
+::: callout-tip
+## Manuscripts ♥️ Git + GitHub
+
+Track your project with Git and host on GitHub for easy publishing.
+:::
+
+## A finished product
+
+```{=html}
+<iframe src="https://dragonstyle.github.io/submission-quarto-lite-r/" title="La Palma Earthquakes" width="1100px" height="600px"></iframe>
+```
+## Multiple formats from one source
+
+![](images/multiple-formats.png){fig-align="center"}
+
+## Multiple formats from one source
+
+In `quarto.yml` of the project:
+
+``` {.yaml .yml}
+---
+format:
+  html:
+    theme: cosmo
+    toc-location: left
+    comments: 
+      hypothesis: true
+    citations-hover: true
+    crossrefs-hover: true
+  agu-pdf: default
+  docx: default
+  jats: default
+---
+```
+
+## Rich front matter
+
+In `index.qmd` of the project:
+
+``` yaml
+---
+title: La Palma Earthquakes
+author:
+  - name: Steve Purves
+    orcid: 0000-0002-0760-5497
+    corresponding: true
+    email: steve@curvenote.com
+    roles:
+      - Investigation
+      - Project administration
+      - Software
+      - Visualization
+    affiliations:
+      - Curvenote
+  - name: Rowan Cockett
+    orcid: 0000-0002-7859-8394
+    corresponding: false
+    roles: []
+    affiliations:
+      - Curvenote
+license: CC BY-SA 4.0
+keywords:
+  - La Palma
+  - Earthquakes
+date: '2022-05-11'
+abstract: |
+  In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). We have created an accessible dataset from this and completed preliminary data analysis which shows seismicity originating at two distinct depths, consistent with the model of a two reservoir system feeding the currently very active volcano.
+keypoints:
+  - You may specify 1 to 3 keypoints for this PDF template
+  - These keypoints are complete sentences and less than or equal to 140 characters
+  - 'They are specific to this PDF template, so they will not appear in other exports'
+citation:
+  container-title: Notebooks Now!
+draft: false
+bibliography: references.bib
+echo: false
+---
+```
+
+## Rich front matter
+
+from source $\rightarrow$ only relevant / required metadata in manuscript:
+
+![](images/manuscript-pdf.png){fig-align="center"}
+
+## Rich front matter
+
+from source $\rightarrow$ only relevant / required metadata in manuscript:
+
+![](images/manuscript-word.png){fig-align="center"}
+
+## Embedded computations
+
+```{=html}
+<script src="https://fast.wistia.com/embed/medias/hdesp8b7fc.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_hdesp8b7fc seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/hdesp8b7fc/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+```
+# What's next?
+
+## *Actually* dive into the code
+
+-   We've seen demonstrated you can *see* the code underlying the figures and tables in the manuscript
+
+-   How about actually *touching* the code in a computational environment that's just a click away, that has all the software and packages needed to reproduce the manuscript, and that is interactive?
 
 ## Back in 2019...
 
 ![](images/elife-paper.png){fig-align="center" width="800"}
 
-## Since then...
+## **Binder with Quarto**
 
-Not many other such papers **\[TO DO: Confirm this statement\]**
+with `quarto use binder`:
 
-# A new project type: Manuscript
+![](images/manuscript-binder.png){fig-align="center"}
 
-## Academic writing with Quarto
+## **Binder with Quarto**
 
--   Quarto **journal articles** (Quarto 1.2+) allow you to author journal articles with literate programming and native LaTeX templates provided by journals to create reproducible articles.
+![](images/launch-binder.png){fig-align="center"}
 
--   Quarto **manuscripts** (Quarto 1.4+), in addition to doing everything you can do with journal articles,
+## Rewind,<br>and get started again {.center}
 
-    -   give readers easy access to **multiple formats** through a manuscript website
+🔗 <https://quarto.org/docs/manuscripts>
 
-    -   provide a framework for **publishing computations** alongside the manuscript, allowing readers to dive into your code
+## Thank you! {.center}
 
-## Some more intro stuff
-
-**\[TO DO: Flesh this out\]**
-
-# Let's write a manuscript
-
-## Getting started with Quarto manuscripts
-
-**\[TO DO: Add Video 1 here\]**
-
-::: notes
-Let's create our first Quarto manuscript...
-:::
-
-## Multiple formats from one source
-
-**\[TO DO: Add Video 2 here\]**
-
-::: notes
-As I previously mentioned, Quarto manuscripts give easy access to multiple formats through a manuscript website\...
-:::
-
-## Rich front matter
-
-**\[TO DO: Add Video 3 here\]**
-
-::: notes
-Quarto supports rich front matter...
-:::
-
-## Add content
-
-**\[TO DO: Add Video 4 here\]**
-
-::: notes
-You can add prose and code to your qmd file for a reproducible document...
-:::
-
-## Embed content
-
-**\[TO DO: Add Video 5 here\]**
-
-::: notes
-Some results you want to embed, you might not want to include all of the code in your single `index.qmd` file. So you can embed from a separate `.qmd`...
-
-Or from a separate `.ipynb`...
-:::
-
-## More videos
-
-\[TO DO: Figure out what goes here\]
-
-# Wrap up
-
-## Wrap up
-
-\[TO DO: Add wrap up content\]
+🔗 [mine.quarto.pub/manuscripts-conf23](https://mine.quarto.pub/manuscripts-conf23)

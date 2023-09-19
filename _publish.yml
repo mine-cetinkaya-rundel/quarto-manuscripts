@@ -1,0 +1,4 @@
+- source: quarto-manuscripts.qmd
+  quarto-pub:
+    - id: bbea5215-d78e-4997-8483-377ad7396ba4
+      url: 'https://mine.quarto.pub/manuscripts-conf23'

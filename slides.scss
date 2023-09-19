@@ -1,0 +1,44 @@
+/*-- scss:defaults --*/
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/brusher');
+
+$font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
+$presentation-title-slide-text-align: "left";
+$presentation-font-size-root: 36px;
+$presentation-title-slide-text-align: "left";
+$code-block-font-size: 0.7em;
+$link-color: #80a9d7;
+$body-color: #22304e;
+
+/*-- scss:rules --*/
+
+details>summary {
+  font-size: 0.75em;
+}
+
+.smaller {
+  font-size: 0.5em;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.larger {
+  font-size: 1.5em;
+}
+
+.largest {
+  font-size: 3em;
+}
+
+.reveal pre {
+  overflow-x: auto;
+}
+.reveal pre code {
+  word-wrap: normal;
+  white-space: pre;
+}
